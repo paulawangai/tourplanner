@@ -8,4 +8,18 @@
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Tourplanner.BusinessLayer\" />
+    <None Remove="Tourplanner.DataLayer\" />
+    <None Remove="Tourplanner.PresentationLayer\" />
+    <None Remove="Tourplanner.Models\" />
+    <None Remove="Tourplanner.Tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tourplanner.BusinessLayer\" />
+    <Folder Include="Tourplanner.DataLayer\" />
+    <Folder Include="Tourplanner.PresentationLayer\" />
+    <Folder Include="Tourplanner.Models\" />
+    <Folder Include="Tourplanner.Tests\" />
+  </ItemGroup>
 </Project>
